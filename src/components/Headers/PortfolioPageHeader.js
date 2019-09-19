@@ -20,10 +20,8 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle
-} from 'reactstrap';
+import { MDBBtn, MDBContainer, MDBRow, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';    
+
 // core components
 
 function LandingPageHeader() {
@@ -52,55 +50,92 @@ function LandingPageHeader() {
       >
         <div className="filter" />
         <Container>
-          <div>
-          <Row>
-          <Col className="text-center" md="4">
-           <Card>
-              <img
-                className="marginsImages"
-                alt="..."
-                src={require("assets/img/portfolio/BigHornSmall.png")}
-               />
-             <CardBody>
-               <CardTitle>Card title</CardTitle>
-               <CardSubtitle>Card subtitle</CardSubtitle>
-               <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-               <Button className="btn-round companyGradient gradientBtn">View</Button>
-             </CardBody>
-           </Card>
-           </Col>
-           <Col className="text-center" md="4">
-           <Card>
-             <img
-               className="marginsImages"
-                alt="..."
-                src={require("assets/img/portfolio/ren-scaled.png")}
-              />
-             <CardBody>
-               <CardTitle>Card title</CardTitle>
-               <CardSubtitle>Card subtitle</CardSubtitle>
-               <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-               <Button className="btn-round companyGradient gradientBtn">View</Button>
-             </CardBody>
-           </Card>
-           </Col>
-           <Col className="text-center" md="4">
-           <Card>
-              <img
-                 className="marginsImages"
-                 alt="..."
-                 src={require("assets/img/portfolio/dh.png")}
-               />
-             <CardBody>
-               <CardTitle>Card title</CardTitle>
-               <CardSubtitle>Card subtitle</CardSubtitle>
-               <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-               <Button className="btn-round companyGradient gradientBtn">View</Button>
-             </CardBody>
-           </Card>
-           </Col>
-           </Row>
-         </div>
+         <MDBContainer className="displayDesktop">
+         <MDBRow>
+          <MDBCol size="4">
+           <MDBCard style={{ width: "22rem"}} className="minheight-adjust">  
+             <MDBCardImage className="img-fluid marginsImages" src="img-fluid" src={require("assets/img/portfolio/BigHornSmall.png")} waves />
+             <MDBCardBody>
+               <MDBCardTitle>Card title</MDBCardTitle>
+               <MDBCardText>
+                 Some quick example text to build on the card title and make
+                 up the bulk of the card&apos;s content.
+               </MDBCardText>
+               <MDBBtn href="#">MDBBtn</MDBBtn>
+             </MDBCardBody>
+           </MDBCard>
+         </MDBCol>
+          <MDBCol size="4">
+           <MDBCard style={{ width: "22rem" }} className="minheight-adjust">
+             <MDBCardImage className="img-fluid marginsImages" src={require("assets/img/portfolio/ren-scaled.png")} waves />
+             <MDBCardBody>
+               <MDBCardTitle>Card title</MDBCardTitle>
+               <MDBCardText>
+                 Some quick example text to build on the card title and make
+                 up the bulk of the card&apos;s content.
+               </MDBCardText>
+               <MDBBtn href="#">MDBBtn</MDBBtn>
+             </MDBCardBody>
+           </MDBCard>
+         </MDBCol>
+          <MDBCol size="4">
+           <MDBCard style={{ width: "22rem" }} className="minheight-adjust">
+             <MDBCardImage className="img-fluid marginsImages" src={require("assets/img/portfolio/dh.png")} waves />
+             <MDBCardBody>
+               <MDBCardTitle>Card title</MDBCardTitle>
+               <MDBCardText>
+                 Some quick example text to build on the card title and make
+                 up the bulk of the card&apos;s content.
+               </MDBCardText>
+               <MDBBtn href="#">MDBBtn</MDBBtn>
+             </MDBCardBody>
+           </MDBCard>
+         </MDBCol>
+         </MDBRow>
+         </MDBContainer>
+         <MDBContainer className="displayMobile">
+         <MDBRow>
+          <MDBCol size="8">
+           <MDBCard style={{ width: "22rem" }}>
+             <MDBCardImage className="img-fluid" src="assets/img/portfolio/BigHornSmall.png" waves />
+             <MDBCardBody>
+               <MDBCardTitle>Card title</MDBCardTitle>
+               <MDBCardText>
+                 Some quick example text to build on the card title and make
+                 up the bulk of the card&apos;s content.
+               </MDBCardText>
+               <MDBBtn href="#">MDBBtn</MDBBtn>
+             </MDBCardBody>
+           </MDBCard>
+         </MDBCol>
+          <MDBCol size="8">
+           <MDBCard style={{ width: "22rem" }}>
+             <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+             <MDBCardBody>
+               <MDBCardTitle>Card title</MDBCardTitle>
+               <MDBCardText>
+                 Some quick example text to build on the card title and make
+                 up the bulk of the card&apos;s content.
+               </MDBCardText>
+               <MDBBtn href="#">MDBBtn</MDBBtn>
+             </MDBCardBody>
+           </MDBCard>
+         </MDBCol>
+          <MDBCol size="8">
+           <MDBCard style={{ width: "22rem" }}>
+             <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+             <MDBCardBody>
+               <MDBCardTitle>Card title</MDBCardTitle>
+               <MDBCardText>
+                 Some quick example text to build on the card title and make
+                 up the bulk of the card&apos;s content.
+               </MDBCardText>
+               <MDBBtn href="#">MDBBtn</MDBBtn>
+             </MDBCardBody>
+           </MDBCard>
+         </MDBCol>
+         </MDBRow>
+         </MDBContainer>
         </Container>
       </div>
     </>

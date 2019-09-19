@@ -40,7 +40,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import PortfolioPageHeader from "components/Headers/PortfolioPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
-function LandingPage() {
+function PortfolioPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -57,4 +57,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default PortfolioPage;

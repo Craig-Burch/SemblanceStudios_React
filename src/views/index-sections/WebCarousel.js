@@ -75,11 +75,10 @@ function WebCarousel() {
   };
   return (
     <>
-      <div className="section pt-o" id="carousel">
+      <div className="section pt-o coColorBGdark" id="carousel">
         <Container>
-        <h1 align="center" class="mb-4"> Web Development </h1>
           <Row>
-            <Col className="ml-auto mr-auto" md="12">
+            <Col className="marginTopPort ml-auto mr-auto" md="12">
               <Card className="page-carousel">
                 <Carousel
                   activeIndex={activeIndex}

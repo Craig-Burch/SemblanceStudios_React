@@ -76,14 +76,30 @@
 }
 .carousel-caption {
   display: none !important;
-}
+}  
 /*team section*/
 .whiteColor {
   color: white !important; 
 }
 /*porfolio page*/
 .marginsImages {
-  padding: 15px 15px;
+  padding: 10% 10%;
+}
+.marginTopPortfolio {
+  margin-top: 200px !important;
+}
+.minheight-adjust {
+  min-height: 600px;
+}
+@media only screen and (max-width: 600px) {
+.displayDesktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+.displayMobile {
+  display: none;
+ }
 }
 /*end custom css*/
 .tim-row {
